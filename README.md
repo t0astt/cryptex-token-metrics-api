@@ -6,11 +6,11 @@ A simple API for supplying CoinMarketCap with total supply information for the C
 ## Usage
 First, bring up the service: `docker-compose up -d`.
 
-### CoinMarketCap
-* Total Token Supply: *GET* `/cmc/tokens/<token>` with `token` being either TCAP or CTX.
-
 ### Metrics
-* APY: *GET* `/metrics/tokens/<token>/apy` with `token` being CTX.
+* APY: *GET* `tokens/<token>/apy`, with `token` being CTX.
+* Total Supply: *GET* `tokens/<token>/total-supply`, with `token` being either CTX or TCAP.
+  * For CoinMarketCap format (raw string), *GET* `tokens/<token>/total-supply?cmc=true`
+* All metrics: *GET* `tokens/<token>`, with `token` being either CTX or TCAP.
 
 ## Changelog
 * 2.0.0 - Implement new endpoint paths, support getting APY metrics for CTX
