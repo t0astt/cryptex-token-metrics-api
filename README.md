@@ -1,3 +1,6 @@
+# Notice
+This project and future work has been copied over to the official cryptexfinance GitHub organization at https://github.com/cryptexfinance/cryptex-api. The code in this specific repository will no longer be maintained/developed.
+
 # Cryptex CoinMarketCap API
 A simple API for supplying CoinMarketCap with total supply information for the CTX and TCAP tokens.
 
